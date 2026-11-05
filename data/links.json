@@ -1,0 +1,136 @@
+[
+  {
+    "id": 1,
+    "title": "Ikan Mujair Mentah Segar (Ukuran Sedang - 1 Kg)",
+    "category": "produk",
+    "type": "product",
+    "icon": "🐟",
+    "price": 32000,
+    "priceDisplay": "Rp 32.000 / kg",
+    "unit": "Kg",
+    "tag": "🔥 Ukuran Paling Laris",
+    "desc": "Ikan mujair mentah segar hasil panen kolam air mengalir pegunungan. Isi 4-6 ekor per kilogram. Daging manis padat, segar alami, dan bebas bau lumpur.",
+    "prepOptions": [
+      "Ikan Mentah Hidup Utuh",
+      "Ikan Mentah Segar (Es Batu)",
+      "Gratis Bersih Sisik & Jeroan"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Ikan Mujair Mentah Jumbo (Ukuran Besar - 1 Kg)",
+    "category": "produk",
+    "type": "product",
+    "icon": "🐟",
+    "price": 36000,
+    "priceDisplay": "Rp 36.000 / kg",
+    "unit": "Kg",
+    "tag": "⭐ Daging Super Tebal",
+    "desc": "Ikan mujair mentah kualitas premium berukuran besar (isi 2-3 ekor per kg). Daging tebal berotot, tekstur kenyal alami, sangat cocok untuk Anda olah dan bumbui sendiri.",
+    "prepOptions": [
+      "Ikan Mentah Hidup Utuh",
+      "Gratis Bersih Sisik & Jeroan",
+      "Belah Punggung / Bekakak Mentah"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Ikan Mujair Mentah Bersih Siap Bumbu (1 Kg)",
+    "category": "produk",
+    "type": "product",
+    "icon": "🔪",
+    "price": 35000,
+    "priceDisplay": "Rp 35.000 / kg",
+    "unit": "Kg",
+    "tag": "✨ Praktis & Higienis",
+    "desc": "Ikan mujair mentah segar yang sudah kami bersihkan sisik, insang, dan jeroannya dengan air mengalir higienis. Murni ikan mentah segar tanpa bumbu/garam, siap disimpan atau dimasak.",
+    "prepOptions": [
+      "Potongan Utuh Bersih",
+      "Potong 2 Bagian (Tengah)",
+      "Belah Bekakak Siap Marinasi"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Paket Grosir Ikan Mujair Mentah Kolam (10 Kg)",
+    "category": "produk",
+    "type": "product",
+    "icon": "📦",
+    "price": 290000,
+    "priceDisplay": "Rp 290.000 / 10 kg",
+    "unit": "Paket (10 Kg)",
+    "tag": "🏷️ Harga Grosir Pasokan",
+    "desc": "Pasokan partai ikan mujair mentah segar 10 kilogram dengan harga grosir hemat (Rp 29.000/kg). Cocok untuk persediaan warung makan, katering, hajatan, atau kolam pemancingan.",
+    "prepOptions": [
+      "Kondisi Hidup dalam Kantong Oksigen",
+      "Kondisi Segar Dingin (Box Styrofoam Es)",
+      "Request Bersih Sisik & Jeroan"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Bibit / Benih Mujair Hidup Super Gesit (100 Ekor)",
+    "category": "produk",
+    "type": "product",
+    "icon": "🌱",
+    "price": 60000,
+    "priceDisplay": "Rp 60.000 / paket",
+    "unit": "Paket (100 Ekor)",
+    "tag": "🌾 Peternak & Budidaya",
+    "desc": "Bibit ikan mujair hidup pilihan ukuran 4-6 cm. Kondisi sangat lincah, tahan penyakit, cepat adaptasi, dan nafsu makan tinggi untuk kolam terpal, tanah, atau bioflok.",
+    "prepOptions": [
+      "Packing Kantong Oksigen Kuat 24 Jam",
+      "Bonus Vitamin Adaptasi Air"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "WhatsApp Admin: Tanya Stok & Timbangan Ikan",
+    "category": "kontak",
+    "type": "external",
+    "icon": "💬",
+    "tag": "⚡ Fast Response",
+    "desc": "Hubungi WhatsApp admin untuk cek stok panen ikan mentah hari ini, request video timbangan langsung dari kolam, atau konsultasi pengiriman kilat.",
+    "url": "https://wa.me/6281234567890?text=Halo%20Admin%20MUjahir-MUhajir,%20saya%20mau%20tanya%20stok%20ikan%20mujair%20mentah%20hari%20ini"
+  },
+  {
+    "id": 7,
+    "title": "Kerjasama Suplai Ikan Mentah Rutin Resto",
+    "category": "kontak",
+    "type": "external",
+    "icon": "✉️",
+    "tag": "🤝 Kontrak Restoran",
+    "desc": "Kemitraan pasokan ikan mujair mentah segar harian atau mingguan dengan harga kontrak tetap untuk pengusaha rumah makan, katering, dan pedagang pasar.",
+    "url": "mailto:kerjasama@mujahir-muhajir.com?subject=Tanya%20Pasokan%20Rutin%20Ikan%20Mujair%20Mentah"
+  },
+  {
+    "id": 8,
+    "title": "Lokasi Kolam Budidaya (Pilih & Timbang Langsung)",
+    "category": "sosmed",
+    "type": "external",
+    "icon": "📍",
+    "tag": "🗺️ Datang ke Kolam",
+    "desc": "Kunjungi kolam budidaya air mengalir kami di Sukabumi. Anda dapat melihat langsung ikan mujair yang berenang dan menimbang ikan mentah di tempat.",
+    "url": "https://maps.google.com/?q=MUjahir-MUhajir+Budidaya+Ikan"
+  },
+  {
+    "id": 9,
+    "title": "Instagram @mujahir.muhajir (Video Panen Pagi)",
+    "category": "sosmed",
+    "type": "external",
+    "icon": "📸",
+    "tag": "📱 12.5k Pengikut",
+    "desc": "Dokumentasi panen ikan mentah setiap pagi, proses sortir bobot ikan, dan kebersihan kolam air pegunungan.",
+    "url": "https://instagram.com/mujahir.muhajir"
+  },
+  {
+    "id": 10,
+    "title": "TikTok @mujahir_muhajir (Edukasi Ikan Segar)",
+    "category": "sosmed",
+    "type": "external",
+    "icon": "🎬",
+    "tag": "🎥 Tips Perikanan",
+    "desc": "Video tips memilih ikan mujair mentah yang segar, cara membersihkan insang tanpa amis, dan teknik budidaya air deras.",
+    "url": "https://tiktok.com/@mujahir_muhajir"
+  }
+]

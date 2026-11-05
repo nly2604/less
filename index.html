@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMKM MUjahir-MUhajir | Ikan Mujair Mentah Segar Kolam</title>
+  <meta name="description" content="Pusat pasokan ikan mujair mentah segar langsung panen dari kolam air mengalir pegunungan. Tersedia ukuran sedang, jumbo, mentah bersih, partai grosir & bibit unggul.">
+  
+  <!-- Tailwind CSS CDN v4 sesuai materi Pertemuan 2 -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+  </style>
+
+  <!-- Skrip Pencegah Kilatan (Flash) Mode Gelap Sesuai Materi Pertemuan 3 & 4 -->
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("linkpage:theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (savedTheme === "dark" || (savedTheme === null && prefersDark)) {
+        document.documentElement.classList.add("dark");
+      }
+    } catch (error) {
+      // Abaikan jika localStorage diblokir browser
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800 antialiased transition-colors duration-200 dark:bg-slate-950 dark:text-slate-100 selection:bg-teal-500 selection:text-white">
+
+  <!-- Tombol Toggle Tema (Tetap di pojok kanan atas) -->
+  <button id="theme-toggle" type="button" aria-label="Ganti ke mode gelap"
+          class="fixed right-4 top-4 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-white text-xl shadow-md ring-1 ring-slate-200 transition duration-200 hover:scale-105 hover:ring-teal-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600 dark:bg-slate-900 dark:ring-slate-800 dark:hover:ring-teal-400 dark:focus-visible:outline-teal-400 cursor-pointer">🌙</button>
+
+  <!-- Container Utama Responsif: Mobile terpusat, Desktop split 2 kolom -->
+  <div class="mx-auto max-w-md px-4 py-8 md:max-w-xl md:py-14 lg:grid lg:max-w-5xl lg:grid-cols-2 lg:items-start lg:gap-14">
+    
+    <!-- ================= KOLOM KIRI: PROFIL UMKM (STICKY DI DESKTOP) ================= -->
+    <div class="lg:sticky lg:top-12">
+      <div class="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200/80 transition-all dark:bg-slate-900/90 dark:ring-slate-800">
+        
+        <header class="flex flex-col items-center text-center">
+          <!-- Avatar / Logo UMKM -->
+          <div class="relative">
+            <img src="avatar.svg" alt="Logo UMKM MUjahir-MUhajir"
+                 class="h-28 w-28 rounded-full shadow-md ring-4 ring-teal-500/20 transition-transform duration-300 hover:scale-105 dark:ring-teal-400/20 md:h-32 md:w-32">
+            <!-- Badge Ikon Ikan Mentah Segar -->
+            <span class="absolute bottom-1 right-1 flex h-7 w-7 items-center justify-center rounded-full bg-teal-600 text-xs text-white shadow-md ring-2 ring-white dark:ring-slate-900" title="Ikan Mentah Segar Alami">🐟</span>
+          </div>
+
+          <!-- Status Ketersediaan & Panen Hari Ini -->
+          <div class="mt-4 inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3.5 py-1 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-300/80 dark:bg-emerald-950/70 dark:text-emerald-300 dark:ring-emerald-800">
+            <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>Buka Hari Ini · Panen Ikan Mentah Segar Siap Kirim</span>
+          </div>
+
+          <!-- Nama UMKM & Rating -->
+          <h1 class="mt-3.5 flex items-center justify-center gap-1.5 text-2xl font-bold tracking-tight text-slate-900 dark:text-white md:text-3xl">
+            <span>MUjahir-MUhajir</span>
+            <span class="text-teal-600 dark:text-teal-400" title="UMKM Terverifikasi">
+              <svg class="h-6 w-6 inline" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+            </span>
+          </h1>
+
+          <p class="mt-1 flex items-center justify-center gap-2 text-xs font-medium text-amber-600 dark:text-amber-400">
+            <span>⭐ 4.9 (240+ Pembeli Puas)</span>
+            <span>•</span>
+            <span class="text-slate-500 dark:text-slate-400">📍 Sukabumi Air Deras</span>
+          </p>
+
+          <p class="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+            Pusat Penjualan <strong>Ikan Mujair Mentah Segar</strong> Langsung dari Kolam Air Deras Pegunungan. Daging padat manis, segar alami, bebas aroma lumpur.
+          </p>
+
+          <!-- Keunggulan Ikan Mentah (Informatif & User Friendly) -->
+          <div class="mt-4 flex flex-wrap justify-center gap-2 text-[11px] font-medium text-slate-600 dark:text-slate-300">
+            <span class="rounded-lg bg-slate-100 px-2.5 py-1 ring-1 ring-slate-200 dark:bg-slate-800 dark:ring-slate-700">💧 Kolam Air Mengalir Alami</span>
+            <span class="rounded-lg bg-slate-100 px-2.5 py-1 ring-1 ring-slate-200 dark:bg-slate-800 dark:ring-slate-700">🔪 Gratis Buang Sisik & Jeroan</span>
+            <span class="rounded-lg bg-slate-100 px-2.5 py-1 ring-1 ring-slate-200 dark:bg-slate-800 dark:ring-slate-700">⚖️ Timbangan Pasti Pas & Jujur</span>
+          </div>
+        </header>
+
+        <!-- Navigasi Kontak Cepat & Sosmed -->
+        <nav aria-label="Media sosial dan kontak cepat" class="mt-6 border-t border-slate-100 pt-5 dark:border-slate-800/80">
+          <p class="text-center text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-3">Layanan Kontak Cepat</p>
+          <ul class="flex justify-center gap-3">
+            <li>
+              <a href="https://wa.me/6281234567890?text=Halo%20Admin%20MUjahir-MUhajir,%20saya%20mau%20pesan%20ikan%20mujair%20mentah%20segar" 
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="WhatsApp Admin" title="Chat WhatsApp Pemesanan"
+                 class="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-50 text-xl shadow-xs ring-1 ring-slate-200 transition duration-200 hover:-translate-y-0.5 hover:bg-teal-50 hover:ring-teal-500 dark:bg-slate-800 dark:ring-slate-700 dark:hover:bg-slate-800 dark:hover:ring-teal-400">💬</a>
+            </li>
+            <li>
+              <a href="https://instagram.com/mujahir.muhajir" 
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Instagram Resmi" title="Instagram @mujahir.muhajir"
+                 class="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-50 text-xl shadow-xs ring-1 ring-slate-200 transition duration-200 hover:-translate-y-0.5 hover:bg-teal-50 hover:ring-teal-500 dark:bg-slate-800 dark:ring-slate-700 dark:hover:bg-slate-800 dark:hover:ring-teal-400">📸</a>
+            </li>
+            <li>
+              <a href="https://maps.google.com/?q=MUjahir-MUhajir+Budidaya+Ikan" 
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Lokasi Kolam" title="Lokasi Kolam Budidaya (Google Maps)"
+                 class="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-50 text-xl shadow-xs ring-1 ring-slate-200 transition duration-200 hover:-translate-y-0.5 hover:bg-teal-50 hover:ring-teal-500 dark:bg-slate-800 dark:ring-slate-700 dark:hover:bg-slate-800 dark:hover:ring-teal-400">📍</a>
+            </li>
+            <li>
+              <a href="mailto:kerjasama@mujahir-muhajir.com" 
+                 aria-label="Email Pasokan Resto" title="Email Kerjasama Pasokan Resto"
+                 class="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-50 text-xl shadow-xs ring-1 ring-slate-200 transition duration-200 hover:-translate-y-0.5 hover:bg-teal-50 hover:ring-teal-500 dark:bg-slate-800 dark:ring-slate-700 dark:hover:bg-slate-800 dark:hover:ring-teal-400">✉️</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Informasi Jam Operasional & Pengambilan -->
+        <div class="mt-5 rounded-2xl bg-teal-50/60 p-3 text-center text-xs text-teal-900 ring-1 ring-teal-200/60 dark:bg-teal-950/40 dark:text-teal-200 dark:ring-teal-800/60">
+          🕒 <span class="font-semibold">Panen & Buka:</span> Setiap Hari 07.00 - 17.00 WIB
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= KOLOM KANAN: DAFTAR IKAN MENTAH & LINK (MAIN) ================= -->
+    <main class="mt-8 lg:mt-0">
+      
+      <!-- Header Menu -->
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3 dark:border-slate-800">
+        <div>
+          <h2 class="text-base font-bold text-slate-900 dark:text-white">
+            Pilihan Ikan Mujair Mentah & Tautan
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400">
+            Tersedia ikan mentah kiloan, partai grosir & opsi bersih jeroan
+          </p>
+        </div>
+      </div>
+
+      <!-- Tab Filter Kategori (Di-render dari JavaScript) -->
+      <div id="filter-tabs" class="mt-4 flex flex-wrap gap-2"></div>
+
+      <!-- Petunjuk User Friendly: Mencegah langsung diarahkan ke WA -->
+      <div class="mt-3.5 flex items-center gap-2 rounded-xl bg-amber-50 px-3.5 py-2 text-xs text-amber-800 ring-1 ring-amber-200 dark:bg-amber-950/40 dark:text-amber-200 dark:ring-amber-900/60">
+        <span class="text-sm">💡</span>
+        <span><strong>Tips:</strong> Klik menu ikan mentah untuk cek harga per kg, perkiraan isi ekor, dan opsi request pembersihan tanpa langsung membuka WhatsApp.</span>
+      </div>
+
+      <!-- Counter: Jumlah Tautan yang Ditampilkan -->
+      <p id="link-count" aria-live="polite" class="mt-3 text-xs font-medium text-slate-500 dark:text-slate-400"></p>
+
+      <!-- Daftar Link / Pilihan Ikan Mentah (Di-render otomatis dari links.json) -->
+      <ul id="link-list" class="mt-3 space-y-3"></ul>
+
+      <!-- Form Tambah Link / Usulan Produk Mentah (Sesuai Materi Pertemuan 4) -->
+      <section class="mt-12" aria-labelledby="add-link-heading">
+        <div class="flex items-center gap-2">
+          <h2 id="add-link-heading" class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+            Tambah Tautan / Usulan Ukuran Ikan
+          </h2>
+          <span class="rounded bg-slate-200 px-1.5 py-0.5 text-[10px] font-medium text-slate-600 dark:bg-slate-800 dark:text-slate-400">Praktik P4</span>
+        </div>
+        
+        <form id="add-link-form" novalidate
+              class="mt-3 space-y-3.5 rounded-2xl bg-white p-5 shadow-xs ring-1 ring-slate-200 transition-all dark:bg-slate-900 dark:ring-slate-800">
+          <div>
+            <label for="link-title" class="block text-xs font-semibold text-slate-700 dark:text-slate-300">Nama Tautan / Ukuran Ikan Mentah</label>
+            <input id="link-title" type="text" placeholder="Contoh: Mujair Mentah Ukuran Super 1 Kg"
+                   class="mt-1 w-full rounded-xl bg-slate-50 px-3.5 py-2.5 text-sm ring-1 ring-slate-200 transition focus-visible:outline-2 focus-visible:outline-teal-600 dark:bg-slate-950 dark:ring-slate-700 dark:focus-visible:outline-teal-400">
+          </div>
+          <div>
+            <label for="link-url" class="block text-xs font-semibold text-slate-700 dark:text-slate-300">Alamat Tautan / URL</label>
+            <input id="link-url" type="text" placeholder="https://... atau mailto:..."
+                   class="mt-1 w-full rounded-xl bg-slate-50 px-3.5 py-2.5 text-sm ring-1 ring-slate-200 transition focus-visible:outline-2 focus-visible:outline-teal-600 dark:bg-slate-950 dark:ring-slate-700 dark:focus-visible:outline-teal-400">
+          </div>
+          <div>
+            <label for="link-category" class="block text-xs font-semibold text-slate-700 dark:text-slate-300">Kategori Tautan</label>
+            <select id="link-category"
+                    class="mt-1 w-full rounded-xl bg-slate-50 px-3.5 py-2.5 text-sm ring-1 ring-slate-200 transition focus-visible:outline-2 focus-visible:outline-teal-600 dark:bg-slate-950 dark:ring-slate-700 dark:focus-visible:outline-teal-400">
+              <option value="produk">🐟 Ikan Mujair Mentah</option>
+              <option value="kontak">💬 Kontak & Pemesanan</option>
+              <option value="sosmed">📍 Sosial Media & Lokasi</option>
+            </select>
+          </div>
+          <p id="form-error" role="alert" class="hidden text-xs font-medium text-rose-600 dark:text-rose-400"></p>
+          <button type="submit"
+                  class="w-full rounded-xl bg-teal-600 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600 dark:bg-teal-600 dark:hover:bg-teal-500 cursor-pointer">
+            + Tambah ke Daftar
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer Halaman -->
+    <footer class="mt-12 text-center text-xs text-slate-400 dark:text-slate-500 lg:col-span-2 border-t border-slate-200/80 pt-6 dark:border-slate-800">
+      <p>© <span id="current-year">2026</span> <strong>UMKM MUjahir-MUhajir</strong> · Penyedia Ikan Mujair Mentah Segar Kolam Pegunungan</p>
+      <p class="mt-1 text-[11px] text-slate-400">Dibuat dengan Semantic HTML5, Tailwind CSS & JavaScript (State Architecture)</p>
+    </footer>
+  </div>
+
+  <!-- ================= MODAL DETAIL & PEMESANAN IKAN MENTAH ================= -->
+  <!-- Mencegah pengguna langsung terlempar ke WA saat mengklik menu -->
+  <div id="product-modal" 
+       class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs transition-opacity duration-200"
+       role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="relative w-full max-w-lg rounded-3xl bg-white p-6 shadow-2xl ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800 max-h-[92vh] overflow-y-auto">
+      <!-- Tombol Tutup X -->
+      <button id="modal-close-btn" type="button" aria-label="Tutup Detail"
+              class="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700 transition cursor-pointer text-lg">✕</button>
+      
+      <!-- Wadah Konten Modal (Diisi oleh script.js) -->
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
